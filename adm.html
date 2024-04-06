@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Administração</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body >
+    <header>
+        <nav>
+            <div class="nav-bar1">
+
+                <div class="logo-nav1"><img src="imagens/Logo-fanex.png" alt="" width="150px" height="50px"
+                        id="logo-fanex"></div>
+                <div class="lista-nav1">
+                    <ul>
+                        <a href="index.html">
+                            <li><img src="imagens/home.png" alt="" width="30px" id="icone" height="30px" id="icone">Home
+                            </li>
+                        </a>
+                        <a href="adm.html">
+                            <li> <img src="imagens/administracao.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Administração</li>
+                        </a>
+                        <a href="tst.html">
+                            <li><img src="imagens/tst.png" alt="" width="30px" id="icone" height="30px" id="icone"> TST
+                            </li>
+                        </a>
+                        <a href="enf.html">
+                            <li><img src="imagens/enfermagem.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Enfermagem</li>
+                        </a>
+                        <a href="elet.html">
+                            <li><img src="imagens/eletrotecnica.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Eletrotécnica</li>
+                        </a>
+                        <a href="mec.html">
+                            <li><img src="imagens/mecanico.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Mecânica</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="nav-bar2">
+
+                <div class="lista-nav2">
+                    <div class="menu-nav2">
+                        <img src="imagens/menu-nav.png" alt="" width="30px" id="icone" height="30px" id="icone"
+                            id="menu-nav" onclick="ClickMenu()">
+                    </div>
+                    <div id="itens">
+
+                        <ul>
+                            <a href="index.html">
+                                <li><img src="imagens/home.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Home</li>
+                            </a>
+                            <a href="adm.html">
+                                <li><img src="imagens/administracao.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Administração</li>
+                            </a>
+                            <a href="tst.html">
+                                <li><img src="imagens/tst.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">TST</li>
+                            </a>
+                            <a href="enf.html">
+                                <li><img src="imagens/enfermagem.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Enfermagem</li>
+                            </a>
+                            <a href="elet.html">
+                                <li><img src="imagens/eletrotecnica.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Eletrotécnica</li>
+                            </a>
+                            <a href="mec.html">
+                                <li><img src="imagens/mecanico.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Mecânica</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="calculo-fanex">
+            <div class="calculo-de-adm">
+                <img src="imagens/Logo-fanex.png" alt="">
+                <h1>Administração</h1>
+                <p>Calculo de nota do curso de administração</p>
+            </div>
+        
+                <hr>
+                <div class="unidades-adm">
+                    UNIDADE I: <br>
+                    <input type="number" id="calAdmU1"><br>
+                    UNIDADE II:<br>
+                    <input type="number" id="calAdmU2"><br>
+                    UNIDADE III:<br>
+                    <input type="number" id="calAdmU3"><br>
+                    UNIDADE IV:<br>
+                    <input type="number" id="calAdmU4">
+                </div>
+                <hr>
+                <div class="presenca-adm">
+                    AULA 01:<br>
+                    <input type="number" id="aula1"><br>
+                    AULA 02:<br>
+                    <input type="number" id="aula2"><br>
+                    AULA 03:<br>
+                    <input type="number" id="aula3"><br>
+                    AULA 04:<br>
+                    <input type="number" id="aula4"><br>
+                </div>
+                <hr>
+                <div class="provaN2-adm">
+                    PROVA N2:<br>
+                    <input type="number" id="provaN2">
+                </div>
+                <button type="submit" onclick="Calcular()">Calcular</button>
+           
+            <div class="resultado">
+                <h3>Media</h3>
+                <p id="resultadoMedia">???</p>
+                <h3>Falta para passar</h3>
+                <p id="faltaNota">???</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icones-footer">
+            <div class="icon-footer"><a href="https://fanex.com.br/"><img src="imagens/fanex.png" alt=""></a></div>
+            <div class="icon-footer"><a href="https://www.instagram.com/fanexrededeensino/"><img src="imagens/instagram.png" alt=""></a></div>
+            <div class="icon-footer"><a
+                    href="https://web.whatsapp.com/send?phone=558496003333&text=Ol%C3%A1!%20estou%20no%20site%20da%20Fanex,%20na%20p%C3%A1gina%20https://fanex.com.br%20e%20tenho%20interesse,%20pode%20me%20ajudar?"><img
+                    src="imagens/whatsapp.png" alt=""></a></div>
+        </div>
+        <hr>
+        <div class="text-footer">
+            <div class="text-footer1">
+                <h2>Contato</h2>
+                <p>(84) 99600-3333</p>
+            </div>
+            <div class="text-footer2">
+                <h2>Endereço Escola</h2>
+                <p>Rua Avenida centernário, 125 - Centro, Macau/RN 59500-000</p>
+                <h2>Endereço Escola Técnico</h2>
+                <p> Rua Martins Ferreira, 245 - Centro, Macau/RN 59500-000</p>
+            </div>
+        </div>
+        <hr>
+        <div class="feito-footer">
+            Criado por Alison Ryan - com todos os direitos reservados©
+        </div>
+    </footer>
+</body>
+
+</html>
